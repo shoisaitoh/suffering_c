@@ -15,8 +15,8 @@ int main(void){
   student *pdata;
 
   pdata = &data; /* 初期化 */
-  (*pdata).year = 10; /* 通常変数モードへの切り替え */
-  strcpy((*pdata).name,"MARIO"); /* 通常変数モードへの切り替え */
+  pdata->year = 10; /* 通常変数モードへの切り替え */
+  strcpy(pdata->name,"MARIO"); /* 通常変数モードへの切り替え */
 
   return 0;
 }
